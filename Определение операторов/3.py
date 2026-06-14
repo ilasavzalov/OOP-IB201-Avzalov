@@ -1,0 +1,40 @@
+class SquareFunction:
+    def __init__(self, a, b, c):
+        self.a = a
+        self.b = b
+        self.c = c
+    
+    def __call__(self, x):
+        return self.a * x * x + self.b * x + self.c
+
+
+
+print("Пример1")
+sf = SquareFunction(1, 0, 0)
+print(sf(-2))
+print(sf(-1))
+print(sf(-0))
+print(sf(1))
+print(sf(2))
+print(sf(10))
+print()
+
+print("Пример2")
+sf = SquareFunction(1, 2, 1)
+print(sf(-2))
+print(sf(-1))
+print(sf(-0))
+print(sf(1))
+print(sf(2))
+print(sf(10))
+print()
+
+print("Пример3")
+sf = SquareFunction(0, 0, 1)
+print(sf(-2))
+print(sf(-1))
+print(sf(-0))
+print(sf(1))
+print(sf(2))
+print(sf(10))
+print()
